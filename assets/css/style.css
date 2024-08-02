@@ -1,0 +1,64 @@
+body {
+    background-color:  rgba(230, 233, 230, 0.908) ;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, rgba(183, 220, 188, 0.908) , rgba(77, 162, 89, 0.908));
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    
+}
+
+.login-button {
+    background-color:  rgba(37, 56, 40, 0.908);
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: rgba(59, 86, 63, 0.908);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color:rgb(58, 59, 56);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color:black
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom : 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: rgb(75, 71, 37);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
